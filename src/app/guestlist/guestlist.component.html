@@ -1,0 +1,8 @@
+<!-- this is conditional rendering of html -->
+
+<p *ngIf="guests">
+  Guest is defined.
+  <div *ngFor="let g of guest">
+    {{ g.firstname }} {{ g.lastName }} {{ g.dateOfbirth }}
+  </div>
+</p>
