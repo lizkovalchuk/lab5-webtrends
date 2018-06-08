@@ -6,3 +6,11 @@
     {{ g.firstname }} {{ g.lastName }} {{ g.dateOfbirth }}
   </div>
 </p>
+
+<!-- below is the equivalent as OnChange -->
+
+<input [(ngModel)]="guestSearch.firstname">
+<button (click)="findPeople()"> Search </button>
+<div>
+  {{ guestSearch.firstname }}
+</div>
